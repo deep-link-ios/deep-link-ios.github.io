@@ -14,7 +14,7 @@
 </body >
 </html> -->
 
- <html>
+     <html>
 <body>
 
 Enter Gender: <br><input type="text" id="myGender" value="male"><br><br>
@@ -23,7 +23,9 @@ Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
 
 <p></p>
 
-<button onclick="myFunction()">Submit and open Lifelight</button>
+<button onclick="myFunction()">Submit and open Lifelight</button><br><br>
+
+<button onclick="myFunction2()">Open Lifelight without ID</button>
 
 <p id="demo"></p>
 
@@ -31,12 +33,15 @@ Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
 function myFunction() {
 
 var gender = document.getElementById("myGender").value;
-    gender{ text-transform: lowercase; }
 var age = document.getElementById("myAge").value;
 var height = document.getElementById("myHeight").value;
 
 location.replace("lifelight://sometext/gender="+gender+"&age="+age+"&height="+height+"&uniqueID=1233211233")
 
+}
+
+function myFunction2() {
+location.replace("lifelight://sometext")
 }
 </script>
 
