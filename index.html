@@ -5,11 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<!-- <body>
     <div>
         <p>Hello ! 1507143801</p>
     </div>
     
     <a href="lifelight://sometext/gender=male&age=34&height=185&uniqueID=1233211233"> Click to open lifelight </a>
 </body >
+</html> -->
+    
+    <html>
+<body>
+
+Enter Gender: <input type="text" id="myGender" value="male">
+Enter Age: <input type="text" id="myAge" value="35">
+Enter Height: <input type="text" id="myHeight" value="185">
+
+<p>Click the button to display the value of the value attribute of the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+var gender = document.getElementById("myGender").value;
+var age = document.getElementById("myAge").value;
+var height = document.getElementById("myHeight").value;
+
+window.location.href = "lifelight://sometext/gender="+gender+"&age="+age+"&height="+height+"&uniqueID=1233211233"
+
+}
+</script>
+
+</body>
 </html>
