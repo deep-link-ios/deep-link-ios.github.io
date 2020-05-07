@@ -10,7 +10,7 @@
         <p>Hello ! 1507143801</p>
     </div>
     
-    <a href="lifelight://sometext/gender=male&age=34&height=185&uniqueID=1233211233"> Click to open lifelight </a>
+    <a href="lifelight://sometext/gender=male&age=34&height=185&uniqueID=1233211233&signature=blablabla"> Click to open lifelight </a>
 </body >
 </html> -->
 
@@ -20,6 +20,7 @@
 Enter Gender: <br><input type="text" id="myGender" value="male"><br><br>
 Enter Age: <br><input type="text" id="myAge" value="35"><br><br>
 Enter Height: <br><input type="text" id="myHeight" value="185"><br><br>
+Enter Signature: <br><input type="text" id="signature" value=""><br><br>
 
 <p></p>
 
@@ -33,8 +34,9 @@ function myFunction() {
 var gender = document.getElementById("myGender").value;
 var age = document.getElementById("myAge").value;
 var height = document.getElementById("myHeight").value;
+var signature = document.getElementById("signature").value;
 
-location.replace("lifelight://sometext/gender="+gender+"&age="+age+"&height="+height+"&uniqueID=1233211233")
+location.replace("lifelight://sometext/gender="+gender+"&age="+age+"&height="+height+"&uniqueID=1233211233"+"&signature="+signature)
 
 }
 
